@@ -1,17 +1,22 @@
-/**function declaration */
+Functions:
+    Functions declaration
+Example 1:
 function hisAge(ages){
     console.log(ages);
 }
 hisAge(23)
 
+Example 2:
 
 // Create a function (you decide the name) that logs out the number 42 to the console
 // Call/invoke the function
+
 function myNumber(){
     console.log(42)
 }
 myNumber()
 
+Example 3:
 
 function square(number){
     return number * number
@@ -19,13 +24,7 @@ function square(number){
 const squared = square(90)
 console.log(squared);
 
-/**function expression */
-const herAge = function(aged){
-    return aged * 2
-}
-const sheAges = herAge(23)
-console.log(sheAges);
-
+Example 4:
 
 let lap1 = 23
 let lap2 = 45
@@ -44,7 +43,21 @@ function fruitProcessor(apples, oranges){
 const appleOrangeJuice = fruitProcessor(34,2)
 console.log(appleOrangeJuice);
 
-// objects
+
+    Function Expression:
+Example 1:
+
+const herAge = function(aged){
+    return aged * 2
+}
+const sheAges = herAge(23)
+console.log(sheAges);
+
+
+    OBJECTS:
+
+Example 1:
+
 const person = {
     firstname: 'jamein',
     age: 23,
