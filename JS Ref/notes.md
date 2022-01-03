@@ -58,9 +58,13 @@ console.log(sheAges);
 
 Example 1:
 
+let mySymbol = symbol() //used to hide some information
+
 const person = {
     firstname: 'jamein',
     age: 23,
+    partTime: false,
+    [mySymbol]: 'secretinfo',
     subjects: {
         eng: 56,
         math: 90
@@ -70,6 +74,9 @@ const person = {
     },
     totalMarks: function(){
         console.log(`You managed ${this.subjects.eng + this.subjects.math} marks`)
+    }
+    showInfo: function(){
+        console.log(this.age)
     }
 }
 console.log(person.age)

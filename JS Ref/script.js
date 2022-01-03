@@ -31,4 +31,44 @@ function save(){
     count = 0
 }
 
+// Function declaration
+function showMessage(){
 
+}
+showMessage()
+
+// Function expression
+const logMessage = function loggedMessage(message){
+    console.log(message)
+}
+logMessage('Check Mails');
+
+// Return
+// function getSecretCode(value){
+//     let code = 42 * value
+//     return code
+// }
+// console.log(getSecretCode(33))
+
+// function salesOff(percentage){
+//     document.getElementById('percent-off').textContent = `${percentage}% OFF`
+//   }
+//   salesOff(38)
+
+//   let mySymbol = Symbol()
+//   const car = {
+//       [mySymbol]: 'secretinfo'
+//   }
+//   console.log(car.mySymbol)
+
+const btnTo = document.getElementById('see-review')
+btnTo.addEventListener('click', function(){
+    const review = document.getElementById('review')
+    if(review.classList.contains('d-none')){
+        review.classList.remove('d-none')
+        btnTo.textContent = 'CLOSE REVIEW'
+    }else{
+        review.classList.add('d-none')
+        btnTo.textContent = 'SEE REVIEW'
+    }
+})
