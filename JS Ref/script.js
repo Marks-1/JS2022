@@ -16,3 +16,13 @@ function save(){
     // console.log(count);
 }
 
+//working with strings
+let welcomeEl = document.getElementById('welcome-el')
+console.log(welcomeEl);
+
+let hisName = 'Marrk'
+let greeting = 'Hello'
+welcomeEl.innerText = `${greeting} ${hisName},
+I suppose you're well this morning!
+`
+
