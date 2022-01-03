@@ -86,3 +86,20 @@ tracks.playedMost = function(){
 }
 console.log(tracks)
 tracks.playedMost()
+
+//working with strings
+
+// Grab the welcome-el paragraph and store it in a variable called welcomeEl
+let welcomeEl = document.getElementById('welcome-el')
+console.log(welcomeEl);
+
+// Create two variables (name & greeting) that contains your name
+// and the greeting we want to render on the page
+let hisName = 'Marrk'
+let greeting = 'Welcome back'
+
+// Render the welcome message using welcomeEl.innerText
+welcomeEl.innerText = `${greeting} ${hisName},
+I suppose you're well this morning!
+`
+welcomeEl.innerText += '👋'
