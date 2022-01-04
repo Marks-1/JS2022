@@ -177,3 +177,18 @@ function save(){
     countEl.textContent = 0
     count = 0
 }
+
+
+<p>This example uses the addEventListener() method to execute a function when a user clicks on a button.</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo">
+
+<script>
+let mine = document.getElementById("myBtn")
+let para = document.getElementById('demo')
+mine.addEventListener("click", function(){
+	para.innerHTML = "Hello World";
+});
+</script>
